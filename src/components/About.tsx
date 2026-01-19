@@ -7,10 +7,8 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const technologies = [
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "React",
-    "Node.js",
+    "Java",
+    "C/C++",
     "Python",
     "PostgreSQL",
   ];
@@ -33,16 +31,12 @@ const About = () => {
           <div className="grid md:grid-cols-3 gap-12">
             <div className="md:col-span-2 space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Hello! I'm a developer who loves creating things that live on the
-                internet. My interest in web development started back when I
-                discovered the magic of turning ideas into interactive
-                experiences through code.
+                Hello! I'm a current junior at the Colorado School of Mines studying Computer Science with a Data Science specialty.
+                I love to learn new things and work on projects that solve real problems.
               </p>
               <p>
-                Fast-forward to today, I've had the privilege of working on
-                various projects ranging from small business websites to complex
-                web applications. My main focus these days is building
-                accessible, inclusive products and digital experiences.
+                I enjoy tackling complex challenges in full-stack development, whether for fun personal projects or schoolwork.
+                My focus is on creating engaging, interactive projects that make technical concepts tangible and fun.
               </p>
               <p>Here are a few technologies I've been working with recently:</p>
 
@@ -70,10 +64,15 @@ const About = () => {
             >
               <div className="relative z-10 rounded-lg overflow-hidden">
                 <div className="aspect-square bg-gradient-to-br from-primary/20 to-primary/5 rounded-lg flex items-center justify-center">
-                  <div className="w-32 h-32 rounded-full bg-primary/30 flex items-center justify-center">
-                    <span className="text-4xl font-mono font-bold text-primary">
-                      {"</>"}
-                    </span>
+                  <div className="rounded-full bg-primary/30 flex items-center justify-center overflow-hidden
+                  style={{ width: '165px', height: '165px' }}">
+                    <img
+                      src="/public/headshot (1).jpg"
+                      alt="Description"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-all duration-300" />

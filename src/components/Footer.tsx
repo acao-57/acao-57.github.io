@@ -16,8 +16,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors"
           >
-            <p>Designed & Built with ❤️</p>
-            <p className="mt-2 text-xs">© {new Date().getFullYear()} All rights reserved</p>
+            <p className="mt-2 text-xs">© {new Date().getFullYear()} Amy Cao. All rights reserved</p>
           </a>
         </motion.div>
       </div>

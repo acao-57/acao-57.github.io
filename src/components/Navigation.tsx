@@ -61,11 +61,9 @@ const Navigation = () => {
               </motion.button>
             ))}
             <motion.a
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection("#contact");
-              }}
+              href="/public/Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}

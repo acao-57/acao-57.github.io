@@ -1,78 +1,71 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { ExternalLink, Github, Folder } from "lucide-react";
+import ClueGame from "@/assets/ClueGame.png"
+import AlgoBowl from "@/assets/AlgoBowl.png"
 
 const featuredProjects = [
   {
-    title: "E-Commerce Platform",
+    title: "Clue Game",
     description:
-      "A full-stack e-commerce solution with real-time inventory management, secure payment processing, and an intuitive admin dashboard. Built with modern technologies for optimal performance and user experience.",
-    tech: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
-    github: "#",
+      "A full-stack adaptation of the board game Clue, featuring a Java backend and a Swing-based GUI. The implementation supports single-player gameplay with NPC opponents, includes real-time updating display/functionality features, and applies JUnit testing to ensure robust game logic validation.",
+    tech: ["Java"],
+    github: "https://github.com/acao-57/Clue",
     external: "#",
-    image: "from-primary/20 to-secondary",
+    image: ClueGame,
   },
   {
-    title: "Task Management App",
+    title: "Same Game",
     description:
-      "A collaborative project management tool featuring real-time updates, drag-and-drop functionality, and team collaboration features. Designed for seamless productivity workflows.",
-    tech: ["TypeScript", "Next.js", "Prisma", "WebSocket"],
-    github: "#",
+      "An algorithmic optimization project focues on solving an NP-complete puzzle, leveraging bit arrays to achieve runtime improvements. Multiple heuristic stategies implemented to maximize solution scores, and a verifier to validate solutions.",
+    tech: ["Python, C"],
+    github: "https://github.com/acao-57/algobowl-2025",
     external: "#",
-    image: "from-secondary to-primary/20",
-  },
-  {
-    title: "AI Content Generator",
-    description:
-      "An intelligent content creation platform leveraging machine learning to generate, optimize, and analyze content. Features include SEO optimization and multi-language support.",
-    tech: ["Python", "FastAPI", "OpenAI", "React", "MongoDB"],
-    github: "#",
-    external: "#",
-    image: "from-primary/30 to-muted",
+    image: AlgoBowl,
   },
 ];
 
 const otherProjects = [
   {
-    title: "Weather Dashboard",
-    description: "A beautiful weather app with location-based forecasts, interactive maps, and weather alerts.",
-    tech: ["React", "API", "Chart.js"],
-    github: "#",
+    title: "Pet Pawpularity",
+    description: "Machine learning project analyzing pet images to predict and score animal popularity.",
+    tech: ["Python"],
+    github: "https://github.com/acao-57/PetPawpularity",
     external: "#",
   },
   {
-    title: "Portfolio Template",
-    description: "A customizable portfolio template for developers with dark mode and animation support.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    github: "#",
+    title: "Wine Prediction",
+    description: "Data science project that identifies correlations between various chemical properties and wine quality ratings.",
+    tech: ["Python"],
+    github: "https://github.com/acao-57/WinePrediction",
     external: "#",
   },
   {
-    title: "Chat Application",
-    description: "Real-time chat app with private messaging, group chats, and file sharing capabilities.",
-    tech: ["Socket.io", "Express", "MongoDB"],
-    github: "#",
+    title: "Connect Four",
+    description: "Terminal-based implementation of the Connect Four game.",
+    tech: ["C++"],
+    github: "https://github.com/acao-57/ConnectFour",
     external: "#",
   },
   {
-    title: "Budget Tracker",
-    description: "Personal finance app with expense tracking, budget goals, and visual analytics.",
-    tech: ["React Native", "Firebase"],
-    github: "#",
+    title: "Statistical Modeling",
+    description: "Statistical Modeling project analyzing resort data to identify which customers are most likely to cancel a reservation.",
+    tech: ["R"],
+    github: "https://github.com/acao-57/StatsProject",
     external: "#",
   },
   {
-    title: "Recipe Finder",
-    description: "Find recipes based on ingredients you have, with nutritional info and meal planning.",
-    tech: ["Vue.js", "Spoonacular API"],
-    github: "#",
+    title: "Spotify Database",
+    description: "Implementing normalized schema design for Spotify streaming data",
+    tech: ["PostgreSQL"],
+    github: "https://github.com/acao-57/DatabaseProject",
     external: "#",
   },
   {
-    title: "Markdown Editor",
-    description: "A minimalist markdown editor with live preview, syntax highlighting, and export options.",
-    tech: ["React", "CodeMirror"],
-    github: "#",
+    title: "Shell Interpreter",
+    description: "A custom-built, restricted shell interpreter.",
+    tech: ["C"],
+    github: "https://github.com/acao-57/Shell-Interpreter",
     external: "#",
   },
 ];
@@ -104,10 +97,15 @@ const FeaturedProject = ({
         >
           <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all duration-300" />
           <div className="absolute inset-0 flex items-center justify-center">
-            <span className="font-mono text-2xl text-primary/50">
+            {/* <span className="font-mono text-2xl text-primary/50">
               Project Preview
-            </span>
+            </span> */}
           </div>
+          <img 
+            src={project.image} 
+            alt={project.title}
+            className="w-full h-full object-cover object-center"
+          />
         </motion.div>
       </div>
 
@@ -248,7 +246,7 @@ const Projects = () => {
           transition={{ delay: 0.5 }}
           className="text-center text-2xl font-bold text-foreground mb-12"
         >
-          Other Noteworthy Projects
+          Other Projects
         </motion.h3>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
