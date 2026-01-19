@@ -67,7 +67,7 @@ const About = () => {
                   <div className="rounded-full bg-primary/30 flex items-center justify-center overflow-hidden
                   style={{ width: '165px', height: '165px' }}">
                     <img
-                      src="/public/headshot (1).jpg"
+                      src="/headshot (1).jpg"
                       alt="Description"
                       width={128}
                       height={128}

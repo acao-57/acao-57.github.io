@@ -61,7 +61,7 @@ const Navigation = () => {
               </motion.button>
             ))}
             <motion.a
-              href="/public/Resume.pdf"
+              href="public/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: -20 }}
