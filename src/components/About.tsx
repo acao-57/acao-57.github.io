@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import profilePic from '@/assets/headshot.jpg'
 
 const About = () => {
   const ref = useRef(null);
@@ -67,7 +68,7 @@ const About = () => {
                   <div className="rounded-full bg-primary/30 flex items-center justify-center overflow-hidden
                   style={{ width: '165px', height: '165px' }}">
                     <img
-                      src="/headshot (1).jpg"
+                      src={profilePic}
                       alt="Description"
                       width={128}
                       height={128}

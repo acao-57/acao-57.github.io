@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import resume from '@/assets/Resume.pdf'
 
 const navItems = [
   { name: "About", href: "#about" },
@@ -61,7 +62,7 @@ const Navigation = () => {
               </motion.button>
             ))}
             <motion.a
-              href="public/Resume.pdf"
+              href={resume}
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: -20 }}
