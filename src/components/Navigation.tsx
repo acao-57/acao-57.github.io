@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import resume from '@/assets/Resume.pdf'
+import resume from '@/assets/Amy_Cao_Resume.pdf'
 
 const navItems = [
   { name: "About", href: "#about" },
