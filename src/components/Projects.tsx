@@ -17,7 +17,7 @@ const featuredProjects = [
   {
     title: "Same Game",
     description:
-      "An algorithmic optimization project focues on solving an NP-complete puzzle, leveraging bit arrays to achieve runtime improvements. Multiple heuristic stategies implemented to maximize solution scores, and a verifier to validate solutions.",
+      "Private repo, available upon request! An algorithmic optimization project focusing on solving an NP-complete puzzle, leveraging bit arrays to achieve runtime improvements. Multiple heuristic stategies implemented to maximize solution scores, and a verifier to validate solutions.",
     tech: ["Python, C"],
     github: "https://github.com/acao-57/algobowl-2025",
     external: "#",
